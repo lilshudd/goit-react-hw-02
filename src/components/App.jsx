@@ -43,7 +43,11 @@ const App = () => {
         Please leave your feedback about our service by selecting one of the
         options below.
       </p>
-      <Options onLeaveFeedback={updateFeedback} onReset={resetFeedback} />
+      <Options
+        onLeaveFeedback={updateFeedback}
+        onReset={resetFeedback}
+        feedback={feedback}
+      />
       <Feedback feedback={feedback} />
       <Notification feedback={feedback} />
     </div>

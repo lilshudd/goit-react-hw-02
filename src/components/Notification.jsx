@@ -4,7 +4,7 @@ const Notification = ({ feedback }) => {
   const { good, neutral, bad } = feedback;
   const totalFeedback = good + neutral + bad;
 
-  return <div>{!totalFeedback}</div>;
+  return <div>{totalFeedback === 0 && <p>No feedback given yet</p>}</div>;
 };
 
 Notification.propTypes = {
